@@ -12,21 +12,23 @@ function App() {
   const [isValid, setIsValid] = useState(false);
 
   const generateQRCode = () => {
-    setIsValid(true);
-    axios({
-      method: "GET",
-      url: `https://api.api-ninjas.com/v1/qrcode?format=png&data=${value}`,
-      headers: {
-        "X-Api-Key": "TyvX7NrvmCbJ9xsiNW6f4A==ioWR7qO7m2TsUYMx",
-        "Content-Type": "application/json",
-        Accept: "image/png",
-      },
-      responseType: "arraybuffer",
-    }).then((response) => {
-      setIsValid(false);
-      const blob = new Blob([response.data], { type: "image/png" });
-      setQrCodeImage(URL.createObjectURL(blob));
-    });
+    if (value !== "") {
+      setIsValid(true);
+      axios({
+        method: "GET",
+        url: `https://api.api-ninjas.com/v1/qrcode?format=png&data=${value}`,
+        headers: {
+          "X-Api-Key": "TyvX7NrvmCbJ9xsiNW6f4A==ioWR7qO7m2TsUYMx",
+          "Content-Type": "application/json",
+          Accept: "image/png",
+        },
+        responseType: "arraybuffer",
+      }).then((response) => {
+        setIsValid(false);
+        const blob = new Blob([response.data], { type: "image/png" });
+        setQrCodeImage(URL.createObjectURL(blob));
+      });
+    }
   };
 
   const handleKeyPress = (e) => {
