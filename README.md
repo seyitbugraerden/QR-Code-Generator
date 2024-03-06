@@ -1,8 +1,5 @@
-# React + Vite
+<h2>React | PrimeReact | Axios | Ninja API | QR Code Generator APP</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![FireShot Capture 017 - React QR Code Generator - localhost](https://github.com/seyitbugraerden/React-QRCodeGeneratorApp/assets/154025499/3f8c70e1-3060-4211-b21b-a15ccb931e51)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![FireShot Capture 018 - React QR Code Generator - localhost](https://github.com/seyitbugraerden/React-QRCodeGeneratorApp/assets/154025499/57541186-8352-484f-9c7c-f66ac0fdec69)
